@@ -1,5 +1,6 @@
 <template>
   <div>
+    <NavBar />
     <main
       class="h-auto md:h-svh flex flex-col items-center justify-center p-4 md:p-8 relative bg-red-100 min-h-[600px] overflow-hidden"
     >
@@ -27,6 +28,12 @@
           alt=""
         />
         <img
+          class="top-30 -right-50 hidden -rotate-25 lg:block absolute z-0"
+          src="/images/frenchChips.png"
+          width="300"
+          alt=""
+        />
+        <img
           class="absolute hidden lg:block -top-70 -right-90 z-0"
           src="/images/noodles.png"
           width="400"
@@ -40,35 +47,18 @@
       </div>
       <div class="overflow-hidden max-w-[350px] mt-4">
         <div class="flex items-center gap-4 py-1 inf-scroll">
-          <img
-            class="h-[60px]"
-            src="/images/detty-logo.png"
-            alt="partner"
-            style="filter: grayscale(1)"
-          />
-          <img
-            class="h-[60px]"
-            src="/images/charterhouse.png"
-            alt="partner"
-            style="filter: grayscale(1)"
-          />
+          <img class="h-[40px]" src="/images/detty-logo.png" alt="partner" />
+          <img class="h-[40px]" src="/images/charterhouse.png" alt="partner" />
           <img
             class="h-[60px]"
             src="/images/echohouse-logo.png"
             alt="partner"
-            style="filter: grayscale(1)"
           />
           <img
             class="h-[60px]"
             src="/images/outmosphere.png"
             alt="partner"
-            style="filter: grayscale(1)"
-          /><img
-            class="h-[60px]"
-            src="/images/zaamadisco.webp"
-            alt="partner"
-            style="filter: grayscale(1)"
-          />
+          /><img class="h-[60px]" src="/images/zaamadisco.webp" alt="partner" />
         </div>
       </div>
     </main>
@@ -79,7 +69,7 @@
         alt=""
       />
     </div>
-    <div class="mx-auto max-w-[900px] my-12 p-4 md:p-8">
+    <div id="how" class="mx-auto max-w-[900px] my-12 p-4 md:p-8">
       <h3 class="md:text-4xl text-3xl font-bold text-center mb-8">
         How it works
       </h3>
@@ -121,8 +111,8 @@
         <div class="grow overflow-hidden">
           <div class="inf-scroll flex gap-4">
             <img
-              v-for="i in 10"
-              :src="`/images/rave${3}.jpg`"
+              v-for="i in 6"
+              :src="`/images/rave${i}.jpg`"
               class="h-[260px] object-cover rounded-xl border-6 border-white"
               alt=""
             />
