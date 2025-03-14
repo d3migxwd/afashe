@@ -1,75 +1,92 @@
 <template>
   <div>
     <NavBar />
-    <main
-      class="h-auto md:h-svh flex flex-col items-center justify-center p-4 md:p-8 relative bg-red-100 min-h-[600px] overflow-hidden"
-    >
-      <div
-        class="flex flex-col md:-mt-70 items-center text-center max-w-800 relative"
+    <div id="home" class="section home">
+      <section
+        class="h-auto md:h-svh flex flex-col items-center justify-center p-4 md:p-8 relative bg-red-100 min-h-[600px] overflow-hidden"
       >
-        <h2 class="text-4xl md:text-6xl font-extrabold">Enjoy the Show</h2>
-        <h2 class="text-4xl md:text-6xl font-extrabold">
-          We go sort the Chow<i>!</i>
-        </h2>
-        <div class="my-4">
-          <p class="text-xl md:text-2xl text-center">
-            "Getting food at any <span>event</span> can be a hassle. <br />Let
-            us handle it for you"
-          </p>
-        </div>
-        <div class="z-1 my-4 px-8 py-4 bg-red-500 text-white rounded-lg">
-          <h3 class="text-2xl text-nowrap font-bold">Dail *1509#</h3>
-        </div>
+        <div
+          class="flex flex-col md:-mt-70 items-center text-center mt-[100px] max-w-800 relative"
+        >
+          <h2 class="text-4xl md:text-6xl font-extrabold">Enjoy the Show</h2>
+          <h2 class="text-4xl md:text-6xl font-extrabold">
+            We go sort the Chow<i>!</i>
+          </h2>
+          <div class="my-4">
+            <p class="text-xl md:text-2xl text-center">
+              "Getting food at any <span>event</span> can be a hassle. <br />Let
+              us handle it for you"
+            </p>
+          </div>
+          <div class="z-1 my-4 px-8 py-4 bg-red-500 text-white rounded-lg">
+            <h3 class="text-xl md:text-2xl text-nowrap font-bold">
+              Dail *1509#
+            </h3>
+          </div>
 
-        <img
-          class="top-20 -left-90 hidden lg:block absolute z-0"
-          src="/images/burger.png"
-          width="350"
-          alt=""
-        />
-        <img
-          class="top-30 -right-50 hidden -rotate-25 lg:block absolute z-0"
-          src="/images/frenchChips.png"
-          width="300"
-          alt=""
-        />
-        <img
-          class="absolute hidden lg:block -top-70 -right-90 z-0"
-          src="/images/noodles.png"
-          width="400"
-          alt=""
-        />
-      </div>
-      <div class="flex items-center justify-center gap-4 mt-8">
-        <h4 class="text-lg md:text-xl font-semibold">
-          Partners (<span class="italic">We wish</span>)
-        </h4>
-      </div>
-      <div class="overflow-hidden max-w-[350px] mt-4">
-        <div class="flex items-center gap-4 py-1 inf-scroll">
-          <img class="h-[40px]" src="/images/detty-logo.png" alt="partner" />
-          <img class="h-[40px]" src="/images/charterhouse.png" alt="partner" />
           <img
-            class="h-[60px]"
-            src="/images/echohouse-logo.png"
-            alt="partner"
+            class="top-20 -left-90 hidden lg:block absolute z-0"
+            src="/images/burger.png"
+            width="350"
+            alt=""
           />
           <img
-            class="h-[60px]"
-            src="/images/outmosphere.png"
-            alt="partner"
-          /><img class="h-[60px]" src="/images/zaamadisco.webp" alt="partner" />
+            class="top-30 -right-50 hidden -rotate-25 lg:block absolute z-0"
+            src="/images/frenchChips.png"
+            width="300"
+            alt=""
+          />
+          <img
+            class="absolute hidden lg:block -top-70 -right-90 z-0"
+            src="/images/noodles.png"
+            width="400"
+            alt=""
+          />
         </div>
+        <div class="flex items-center justify-center gap-4 mt-8">
+          <h4 class="text-lg md:text-xl font-semibold">
+            Partners (<span class="italic">We wish</span>)
+          </h4>
+        </div>
+        <div class="overflow-hidden max-w-[350px] mt-4 mb-12 md:mb-0">
+          <div class="flex items-center gap-4 py-1 inf-scroll">
+            <img class="h-[40px]" src="/images/detty-logo.png" alt="partner" />
+            <img
+              class="h-[40px]"
+              src="/images/charterhouse.png"
+              alt="partner"
+            />
+            <img
+              class="h-[60px]"
+              src="/images/echohouse-logo.png"
+              alt="partner"
+            />
+            <img
+              class="h-[60px]"
+              src="/images/outmosphere.png"
+              alt="partner"
+            /><img
+              class="h-[60px]"
+              src="/images/zaamadisco.webp"
+              alt="partner"
+            />
+          </div>
+        </div>
+      </section>
+      <div
+        class="justify-center flex mt-8 md:-mt-[32vh] relative z-2 p-4 md:p-8"
+      >
+        <img
+          src="/images/app-preview.png"
+          class="max-h-[400px] md:max-h-[800px]"
+          alt=""
+        />
       </div>
-    </main>
-    <div class="justify-center flex mt-8 md:-mt-[32vh] relative z-2 p-4 md:p-8">
-      <img
-        src="/images/app-preview.png"
-        class="max-h-[400px] md:max-h-[800px]"
-        alt=""
-      />
     </div>
-    <div id="how" class="mx-auto max-w-[900px] my-12 p-4 md:p-8">
+    <section
+      id="how"
+      class="mx-auto max-w-[900px] py-[100px] md:py-[240px] px-3 md:px-8 section blurry"
+    >
       <h3 class="md:text-4xl text-3xl font-bold text-center mb-8">
         How it works
       </h3>
@@ -96,29 +113,67 @@
         No more missing out on the action – just great food delivered right to
         you!
       </p>
-    </div>
-    <div class="bg-black">
-      <div
-        class="flex flex-col lg:flex-row items-center justify-center gap-8 h-full p-8"
+    </section>
+    <div id="collaborate" class="bg-black section blurry">
+      <section
+        class="h-auto md:h-svh flex flex-col items-center justify-center p-2 md:p-8 relative bg-black text-white min-h-[600px]"
       >
-        <div class="h-full flex items-center justify-center">
-          <h3
-            class="text-4xl md:text-5xl font-bold text-white text-center lg:text-left"
-          >
-            Happy <br class="hidden lg:block" />People
-          </h3>
-        </div>
-        <div class="grow overflow-hidden">
-          <div class="inf-scroll flex gap-4">
-            <img
-              v-for="i in 6"
-              :src="`/images/rave${i}.jpg`"
-              class="h-[260px] object-cover rounded-xl border-6 border-white"
-              alt=""
-            />
+        <div class="mx-auto max-w-[900px] my-12 text-center">
+          <h2 class="text-4xl md:text-6xl font-extrabold">
+            Wanna Collaborate?
+          </h2>
+          <h2 class="text-4xl md:text-6xl font-extrabold">
+            Let's make it happen<i>!</i>
+          </h2>
+
+          <div class="my-[40px]">
+            <p class="text-xl md :text-2xl text-center">
+              "We're always looking for new partners to join us in making events
+              even more awesome. If you're a food vendor or event organizer,
+              we'd love to hear from you!"
+            </p>
+          </div>
+          <div class="flex justify-center">
+            <a
+              href="mailto:eben@afashe.com"
+              class="text-2xl md:text-4xl gap-4 justify-center font-extrabold flex"
+              >eben@afashe.com
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="currentColor"
+                class="bi bi-box-arrow-up-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+                />
+              </svg>
+            </a>
           </div>
         </div>
-      </div>
+        <div
+          class="flex flex-col lg:flex-row items-center justify-center gap-8 p-0 md:p-8"
+        >
+          <div class="grow overflow-x-hidden">
+            <div class="inf-scroll flex gap-4">
+              <img
+                v-for="i in 6"
+                :src="`/images/rave${i}.jpg`"
+                class="h-[260px] object-cover rounded-xl border-6 border-white"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <footer class=""></footer>
   </div>
@@ -127,4 +182,6 @@
 <script setup>
 import { useInfiniteScroll } from "/composables/useInfiniteScroll";
 useInfiniteScroll();
+useScrollSpy();
+useAnimateSection();
 </script>

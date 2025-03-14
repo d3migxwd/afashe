@@ -1,33 +1,42 @@
-<script setup>
-const activeNav = (el) => {
-  const navLinks = document.querySelectorAll(".navy");
-  navLinks.forEach((link) => {
-    link.classList.remove("font-bold", "text-white", "bg-red-500");
-  });
-  el.classList.add("font-bold", "text-white", "bg-red-500");
-};
-</script>
+<script setup></script>
 <template>
   <div>
     <div
       class="flex gap-2 px-6 py-3 fixed top-0 left-0 right-0 z-50 items-center"
     >
-      <img src="/images/afashe-logo.png" alt="logo" class="h-14" />
+      <NuxtLink to="#home "
+        ><img src="/images/afashe-logo.png" alt="logo" class="h-14"
+      /></NuxtLink>
+
       <nav
-        class="py-1 px-2 backdrop-blur-xl flex gap-2 items-center rounded-3xl h-auto border-gray-100"
+        class="py-1 px-1 bg-white shadow-sm flex gap-2 items-center rounded-3xl h-auto"
       >
         <NuxtLink
           to="#how"
-          @click="activeNav($event.target)"
-          class="p-2 text-black hover:font-bold rounded-4xl navy"
+          class="p-2 text-black hover:font-bold rounded-4xl navy hidden md:block"
           >How It Works</NuxtLink
         >
         <NuxtLink
-          to="#contribute"
-          @click="activeNav($event.target)"
-          class="p-2 text-black hover:font-bold rounded-4xl navy"
-          >Contribute</NuxtLink
+          to="#collaborate"
+          class="p-2 text-black hover:font-bold rounded-4xl navy hidden md:block"
+          >Collaborate</NuxtLink
         >
+        <!-- humburger -->
+        <button class="border-[0px] md:hidden cursor-pointer p-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </button>
       </nav>
     </div>
   </div>

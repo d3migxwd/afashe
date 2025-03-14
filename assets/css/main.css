@@ -7,3 +7,26 @@
 body {
   scroll-behavior: smooth;
 }
+.navy {
+  transition: all 0.3s;
+}
+.navy.active {
+  background-color: #fd0800;
+  color: #fff;
+}
+.navy.active:hover {
+  background-color: #fd0800;
+  color: #fff !important;
+}
+.home {
+  transition: all 0.3s;
+}
+.blurry {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s;
+}
+.blurry.active {
+  opacity: 1;
+  transform: translateY(0);
+}
