@@ -19,4 +19,7 @@ export function useAnimateSection() {
       allSections.value.forEach((section) => animateObserver.observe(section));
     }
   });
+  onUnmounted(() => {
+    allSections.value.forEach((section) => section.classList.remove("active"));
+  });
 }

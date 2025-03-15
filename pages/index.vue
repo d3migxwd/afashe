@@ -1,15 +1,16 @@
 <template>
   <div>
     <NavBar />
-    <div id="home" class="section home">
+    <div class="bg-white">
       <section
-        class="h-auto md:h-svh flex flex-col items-center justify-center p-4 md:p-8 relative bg-red-100 min-h-[600px] overflow-hidden"
+        id="home"
+        class="section home h-auto md:h-svh flex flex-col items-center justify-center p-4 md:p-8 relative bg-red-100 min-h-[600px] overflow-hidden"
       >
         <div
           class="flex flex-col md:-mt-70 items-center text-center mt-[100px] max-w-800 relative"
         >
-          <h2 class="text-4xl md:text-6xl font-extrabold">Enjoy the Show</h2>
-          <h2 class="text-4xl md:text-6xl font-extrabold">
+          <h2 class="text-2xl md:text-6xl font-extrabold">Enjoy the Show</h2>
+          <h2 class="text-2xl md:text-6xl font-extrabold">
             We go sort the Chow<i>!</i>
           </h2>
           <div class="my-4">
@@ -73,8 +74,9 @@
           </div>
         </div>
       </section>
+      <!-- app preview -->
       <div
-        class="justify-center flex mt-8 md:-mt-[32vh] relative z-2 p-4 md:p-8"
+        class="justify-center flex mt-8 md:-mt-[32vh] relative z-2 p-4 md:p-8 home"
       >
         <img
           src="/images/app-preview.png"
@@ -83,46 +85,68 @@
         />
       </div>
     </div>
-    <section
-      id="how"
-      class="mx-auto max-w-[900px] py-[100px] md:py-[240px] px-3 md:px-8 section blurry"
-    >
-      <h3 class="md:text-4xl text-3xl font-bold text-center mb-8">
-        How it works
-      </h3>
-      <p class="text-xl">
-        The idea is simple: no one should have to miss out on the fun just to
-        stand in line for food at a concert, festival, or any crowded event.
-        That's where we come in! At your next rave, when hunger strikes, just
-        grab your phone and dial our short code. It's that easy!
-      </p>
-      <ol class="list-decimal list-inside mt-8 text-xl">
-        <li>Select a Vendor: Browse through a list of awesome food vendors.</li>
-        <li>
-          Choose Your Food: Pick your favorite dishes, and don't forget to add a
-          drink!
-        </li>
-        <li>
-          Keep Having Fun: Go back to enjoying the event while we take care of
-          the rest. We'll send you a message in about 30 minutes when your food
-          is ready.
-        </li>
-      </ol>
-      <br />
-      <p class="text-xl">
-        No more missing out on the action – just great food delivered right to
-        you!
-      </p>
-    </section>
-    <div id="collaborate" class="bg-black section blurry">
+    <div class="bg-white">
+      <section id="how" class="section blurry">
+        <div
+          class="mx-auto max-w-[900px] pt-8 pb-[100px] md:pb-[280px] px-3 md:px-8"
+        >
+          <h3 class="md:text-4xl text-2xl font-bold text-center mb-8">
+            How it works
+          </h3>
+          <p class="text-xl">
+            The idea is simple: no one should have to miss out on the fun just
+            to stand in line for food at a concert, festival, or any crowded
+            event. That's where we come in! At your next rave, when hunger
+            strikes, just grab your phone and dial our short code. It's that
+            easy!
+          </p>
+          <ol class="list-decimal list-inside mt-8 text-xl">
+            <li>
+              Select a Vendor: Browse through a list of awesome food vendors.
+            </li>
+            <li>
+              Choose Your Food: Pick your favorite dishes, and don't forget to
+              add a drink!
+            </li>
+            <li>
+              Keep Having Fun: Go back to enjoying the event while we take care
+              of the rest. We'll send you a message in about 30 minutes when
+              your food is ready.
+            </li>
+          </ol>
+          <br />
+          <p class="text-xl">
+            No more missing out on the action – just great food delivered right
+            to you!
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center bg-black gap-8 p-4 md:p-8"
+        >
+          <div class="grow overflow-x-hidden">
+            <div class="inf-scroll flex gap-4">
+              <img
+                v-for="i in 6"
+                :src="`/images/rave${i}.jpg`"
+                class="h-[260px] object-cover rounded-xl border-6 border-white"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="bg-black">
       <section
-        class="h-auto md:h-svh flex flex-col items-center justify-center p-2 md:p-8 relative bg-black text-white min-h-[600px]"
+        id="collaborate"
+        class="section blurry h-auto md:h-svh flex flex-col items-center p-2 md:p-8 relative bg-black text-white min-h-[600px]"
       >
         <div class="mx-auto max-w-[900px] my-12 text-center">
-          <h2 class="text-4xl md:text-6xl font-extrabold">
+          <h2 class="text-2xl md:text-6xl font-extrabold">
             Wanna Collaborate?
           </h2>
-          <h2 class="text-4xl md:text-6xl font-extrabold">
+          <h2 class="text-2xl md:text-6xl font-extrabold">
             Let's make it happen<i>!</i>
           </h2>
 
@@ -136,15 +160,13 @@
           <div class="flex justify-center">
             <a
               href="mailto:eben@afashe.com"
-              class="text-2xl md:text-4xl gap-4 justify-center font-extrabold flex"
+              class="text-xl md:text-4xl gap-4 flex-wrap justify-center font-extrabold flex"
               >eben@afashe.com
 
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
                 fill="currentColor"
-                class="bi bi-box-arrow-up-right"
+                class="bi bi-box-arrow-up-right md:h-[32px] h-[24px] md:w-[32px] w-[24px]"
                 viewBox="0 0 16 16"
               >
                 <path
@@ -157,20 +179,6 @@
                 />
               </svg>
             </a>
-          </div>
-        </div>
-        <div
-          class="flex flex-col lg:flex-row items-center justify-center gap-8 p-0 md:p-8"
-        >
-          <div class="grow overflow-x-hidden">
-            <div class="inf-scroll flex gap-4">
-              <img
-                v-for="i in 6"
-                :src="`/images/rave${i}.jpg`"
-                class="h-[260px] object-cover rounded-xl border-6 border-white"
-                alt=""
-              />
-            </div>
           </div>
         </div>
       </section>
